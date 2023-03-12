@@ -40,7 +40,7 @@ main {
 
 #figure-Equilibrium {
   width: 85%;
-  padding-top: 8%;
+  /* padding-top: 8%; */
   gap: 20px;
 }
 
@@ -51,7 +51,7 @@ main {
   align-content: center;
   align-items: center;
   content: url("./../images/icon-view.svg");
-  background: rgb(8, 232, 226);
+  background: hsl(178, 100%, 50%);
   background: linear-gradient(
     187deg,
     rgba(8, 232, 226, 0.5) 13%,
@@ -152,4 +152,44 @@ a:hover,
   text-align: center;
   background-color: hsl(216, 50%, 16%);
   color: hsl(215, 51%, 70%);
+}
+
+@media (max-width: 375px) {
+  body {
+    max-width: 375px;
+  }
+
+  .card {
+    width: 80%;
+    min-height: 75vh;
+  }
+
+  #figure-Equilibrium::after {
+    min-height: 31vh;
+    width: 67.5%;
+  }
+
+  #figure-Equilibrium {
+    gap: 15px;
+  }
+
+  #figure-Equilibrium figcaption {
+    padding-top: 10px;
+  }
+
+  #figure-Equilibrium p {
+    font-size: 15px;
+  }
+
+  #icons {
+    padding: 20px 0;
+  }
+
+  .figure-avatar {
+    font-size: 0.9em;
+    padding: 18px 0;
+  }
+  .figure-avatar p {
+    margin-left: 10px;
+  }
 }
