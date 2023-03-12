@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  max-width: 1440px;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  justify-content: space-between;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.center-container {
+  align-items: center;
+  align-content: center;
+}
+
+.card {
+  width: 24%;
+  min-height: 75vh;
+  border-radius: 10px;
+  background-color: hsl(216, 50%, 16%);
+  justify-content: space-between;
+  margin: auto;
+}
+
+#figure-Equilibrium {
+  width: 85%;
+  padding-top: 8%;
+  gap: 20px;
+}
+
+#figure-Equilibrium::after {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  content: url("./../images/icon-view.svg");
+  background: rgb(8, 232, 226);
+  background: linear-gradient(
+    187deg,
+    rgba(8, 232, 226, 0.5) 13%,
+    rgba(8, 232, 226, 0.5) 50%,
+    rgba(8, 232, 226, 0.5) 87%
+  );
+  min-height: 38.5vh;
+  width: 20.3%;
+}
+
+#figure-Equilibrium::after,
+#figure-Equilibrium img {
+  border-radius: 10px;
+}
+
+#figure-Equilibrium img {
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#figure-Equilibrium img:hover {
+  z-index: unset;
+}
+
+a,
+#figure-Equilibrium figcaption {
+  color: hsl(0, 0%, 100%);
+}
+
+#figure-Equilibrium figcaption {
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+a:hover,
+#figure-Equilibrium figcaption:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+#figure-Equilibrium p {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+}
+
+#icons {
+  width: 90%;
+  padding: 30px 0;
+  justify-content: space-between;
+}
+
+.text-icon {
+  display: flex;
+  /* background-color: gray; */
+  gap: 5px;
+  width: 50%;
+}
+
+.text-icon-left {
+  color: hsl(178, 100%, 50%);
+}
+
+.text-icon-right {
+  color: hsl(215, 51%, 70%);
+}
+
+.icon-left {
+  content: url("./../images/icon-ethereum.svg");
+}
+
+.icon-right {
+  content: url("./../images/icon-clock.svg");
+}
+
+.figure-avatar {
+  width: 90%;
+  padding: 10px 0 30px 0;
+  gap: 8px;
+  border-top: hsl(215, 32%, 27%) solid;
+}
+
+.figure-avatar img {
+  width: 15%;
+  border-radius: 50px;
+  border: hsl(0, 0%, 100%) solid 2px;
+}
+
+.figure-avatar p {
+  color: hsl(215, 51%, 70%);
+}
+
+.attribution {
+  width: 98%;
+  margin: 10px 0;
+  padding: 8px;
+  font-size: 11px;
+  text-align: center;
+  background-color: hsl(216, 50%, 16%);
+  color: hsl(215, 51%, 70%);
+}
