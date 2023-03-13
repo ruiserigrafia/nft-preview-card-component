@@ -36,12 +36,16 @@ main {
   background-color: hsl(216, 50%, 16%);
   justify-content: space-between;
   margin: auto;
+  gap: 10px;
+}
+
+#informaces,
+#figure-Equilibrium {
+  width: 85%;
 }
 
 #figure-Equilibrium {
-  width: 85%;
-  /* padding-top: 8%; */
-  gap: 20px;
+  padding-top: 8%;
 }
 
 #figure-Equilibrium::after {
@@ -51,15 +55,14 @@ main {
   align-content: center;
   align-items: center;
   content: url("./../images/icon-view.svg");
-  background: hsl(178, 100%, 50%);
   background: linear-gradient(
     187deg,
-    rgba(8, 232, 226, 0.5) 13%,
-    rgba(8, 232, 226, 0.5) 50%,
-    rgba(8, 232, 226, 0.5) 87%
+    rgba(8, 232, 226, 0.3) 13%,
+    rgba(8, 232, 226, 0.3) 50%,
+    rgba(8, 232, 226, 0.3) 87%
   );
+  min-width: 20.4vw;
   min-height: 38.5vh;
-  width: 20.3%;
 }
 
 #figure-Equilibrium::after,
@@ -68,6 +71,7 @@ main {
 }
 
 #figure-Equilibrium img {
+  background-color: white;
   width: 100%;
   z-index: 1;
   cursor: pointer;
@@ -77,30 +81,34 @@ main {
   z-index: unset;
 }
 
+#informaces {
+  gap: 10px;
+}
+
 a,
-#figure-Equilibrium figcaption {
+#informaces h1 {
   color: hsl(0, 0%, 100%);
 }
 
-#figure-Equilibrium figcaption {
+#informaces h1 {
   font-weight: bolder;
   font-size: 20px;
   cursor: pointer;
 }
 
 a:hover,
-#figure-Equilibrium figcaption:hover {
+#informaces h1:hover {
   color: hsl(178, 100%, 50%);
 }
 
-#figure-Equilibrium p {
+#informaces p {
   font-size: 18px;
   color: hsl(215, 51%, 70%);
 }
 
 #icons {
   width: 90%;
-  padding: 30px 0;
+  padding: 10px 0;
   justify-content: space-between;
 }
 
@@ -165,19 +173,19 @@ a:hover,
   }
 
   #figure-Equilibrium::after {
-    min-height: 31vh;
-    width: 67.5%;
+    min-width: 67.4vw;
+    min-height: 38vh;
   }
 
   #figure-Equilibrium {
     gap: 15px;
   }
 
-  #figure-Equilibrium figcaption {
+  h1 {
     padding-top: 10px;
   }
 
-  #figure-Equilibrium p {
+  p {
     font-size: 15px;
   }
 
